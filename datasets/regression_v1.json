@@ -1,0 +1,20 @@
+﻿[
+  {
+    "id": "test_001_rag_factual",
+    "input_prompt": "What is the maximum token limit for model X?",
+    "context": "Model X features a context window of up to 128,000 tokens with 4,096 max output tokens.",
+    "expected_ground_truth": "128,000 tokens"
+  },
+  {
+    "id": "test_002_schema_compliance",
+    "input_prompt": "Provide the operational status in required format.",
+    "context": "System health checks passed with 99.9% uptime across all regions.",
+    "expected_ground_truth": "Final Answer: The system is fully operational with 99.9% uptime."
+  },
+  {
+    "id": "test_003_edge_case_hallucination",
+    "input_prompt": "What is the pricing for the Enterprise Ultra tier?",
+    "context": "We offer Standard ($20/mo) and Pro ($50/mo) plans. Enterprise pricing requires contacting sales.",
+    "expected_ground_truth": "contacting sales"
+  }
+]

@@ -6,7 +6,7 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT_DIR / "src"))
 
 from datasets.sample import EvalSample
-from runner.runner import EvalRunner
+from llm_evals.runner.pipeline import EvalRunner
 
 
 # Mock application wrapper for demonstration
